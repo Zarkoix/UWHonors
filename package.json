@@ -10,15 +10,15 @@
     "prismic-javascript": "1.4.0",
     "prismic-reactjs": "^0.2.0",
     "prismic-toolbar": "0.0.2",
-    "qs": "^6.4.0",
+    "qs": "^6.6.0",
     "react": "~16.0.0",
-    "react-dom": "~16.0.0",
+    "react-dom": "^16.0.1",
     "react-router-dom": "~4.2.2",
-    "whatwg-fetch": "~2.0.3"
+    "whatwg-fetch": "^2.0.4"
   },
   "devDependencies": {
     "gh-pages": "^2.0.1",
-    "react-scripts": "~1.0.14"
+    "react-scripts": "^2.1.8"
   },
   "scripts": {
     "start": "react-scripts start",
