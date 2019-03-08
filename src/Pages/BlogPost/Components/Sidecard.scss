@@ -1,0 +1,38 @@
+@import "../../../theme";
+
+.card {
+  /* Post Base: */
+  background: $contrast;
+  border-radius: 7px;
+  height: auto;
+  margin-bottom: 20px;
+  .header {
+    /* Blog Post Title: */
+    padding-left: 2px;
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 24px;
+    color: $base-dark;
+    border-bottom: $border;
+    .title {
+      padding-left: 3px;
+      font-weight: 300;
+    }
+    .date {
+      float: right;
+      font-weight: 100;
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+  .content {
+    background: $background;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: $emphasis-dark;
+    line-height: 22px;
+    border-radius: 0 0 7px 7px;
+  }
+}

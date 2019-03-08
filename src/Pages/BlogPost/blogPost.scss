@@ -1,0 +1,147 @@
+@import "../../theme";
+
+.blog__page {
+  height: 100%;
+  background-image: $gradient;
+}
+
+.appbar {
+  background: $contrast;
+  box-shadow: $shadow;
+  height: 40px;
+  line-height: 40px;
+  padding: 6px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+  .logo {
+    float: left;
+    padding-left: 10px;
+    font-family: 'Lobster', cursive;
+    background-image: $gradient;
+    color:transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    font-size: calc(2vw + 16px);
+  }
+
+  ul {
+    float: right;
+    li {
+      /* Home: */
+      display: inline;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100;
+      font-size: calc(18px);
+      padding: 0 2vw;
+      color: $base-dark;
+
+      a {
+        color: inherit;
+        font-style: inherit;
+        text-decoration: inherit;
+      }
+    }
+  }
+}
+
+.main {
+  height: auto;
+  // box-shadow: $shadow;
+  padding: 25px;
+  padding-top: 77px;
+  width: calc(100% - 50px);
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .post {
+    /* Post Base: */
+    background: $contrast;
+    border-radius: 7px;
+    width: 65%;
+    margin-bottom: 20px;
+    height: fit-content;
+
+    .header {
+      /* Blog Post Title: */
+      padding: 5px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 100;
+      font-size: 36px;
+      color: $base-dark;
+      border-bottom: $border;
+      .title {
+        font-weight: 500;
+      }
+      .date {
+        float: right;
+        font-weight: 100;
+        font-size: 24px;
+        line-height: 48px;
+      }
+    }
+    .content {
+      background: $background;
+      padding: 5px;
+      font-family: 'Roboto', sans-serif;
+      font-weight: 300;
+      font-size: 18px;
+      color: $emphasis-dark;
+      line-height: 22px;
+      border-radius: 0 0 7px 7px;
+      div {
+        p {
+          padding: 7px 2px;
+        }
+      }
+      .block-img {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-content: center;
+        img {
+          width: 60%;
+          height: auto;
+        }
+      }
+    }
+  }
+
+  .sidebar {
+    width: 30%;
+    position: fixed;
+    right: 15px;
+  }
+}
+@media screen and (max-width : 605px){
+  .appbar {
+    ul {
+      li {
+        font-size: 4vw;
+      }
+    }
+  }
+  .main {
+    padding: 10px;
+    padding-top: 62px;
+    width: calc(100% - 20px);
+    justify-content: flex-start;
+    flex-direction: column;
+    .post, .sidebar {
+      /* width: calc(100% - 20px); */
+      width: 100%;
+    }
+
+    .post {
+
+    }
+
+    .sidebar {
+      position: relative !important;
+      right: inherit !important;
+    }
+  }
+}

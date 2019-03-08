@@ -1,0 +1,41 @@
+@import "../../theme";
+
+.post__card {
+  &:hover {
+    background: #D8D8D8;
+    cursor: pointer;
+  }
+  transition: all 0.2s ease;
+  background: $contrast;
+  border: $border;
+  border-radius: 7px;
+  margin: 2px 0;
+
+  .titleRow {
+    height: 16px;
+    padding-top: 4px;
+    .title, .date {
+      line-height: 16px;
+      font-size: 16px;
+    }
+    .title {
+      padding-left: 5px;
+      font-weight: 400;
+      float: left;
+    }
+    .date {
+      padding-right: 5px;
+      float: right;
+    }
+  }
+
+  .subtitle {
+    padding: 6px;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 300;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+}

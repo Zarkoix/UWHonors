@@ -1,0 +1,35 @@
+/*
+$base-dark: #26498C;
+$base-light: #4E80C0;
+$background: #F2F2F2;
+$emphasis-dark: #12274E;
+
+$contrast: white;
+
+$gradient: linear-gradient(-180deg, $base-light 0%, $base-dark 100%);
+$shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+$border: solid 1px #979797;
+*/
+.footer__container {
+  background-color: #015F56;
+  font-size: 12px;
+  line-height: 10px;
+  color: white;
+  padding: 5px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0; }
+  .footer__container .copyright {
+    padding-left: 10px; }
+  .footer__container .love {
+    padding-right: 10px;
+    float: right; }
+    .footer__container .love a {
+      color: inherit;
+      font-style: inherit;
+      text-decoration: inherit;
+      font-family: 'Lobster', cursive; }
+    .footer__container .love .heart {
+      font-family: 'Lobster', cursive; }
+
+/*# sourceMappingURL=Footer.css.map */

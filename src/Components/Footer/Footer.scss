@@ -1,0 +1,32 @@
+@import "../../theme";
+
+.footer__container {
+  background-color: $base-dark;
+  font-size: 12px;
+  line-height: 10px;
+  color: $contrast;
+  padding: 5px 0;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+
+  .copyright {
+    padding-left: 10px;
+  }
+
+  .love {
+    padding-right: 10px;
+    float: right;
+
+    a {
+      color: inherit;
+      font-style: inherit;
+      text-decoration: inherit;
+      font-family: 'Lobster', cursive;
+    }
+
+    .heart {
+      font-family: 'Lobster', cursive;
+    }
+  }
+}

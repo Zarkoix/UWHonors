@@ -1,0 +1,45 @@
+/*
+$base-dark: #26498C;
+$base-light: #4E80C0;
+$background: #F2F2F2;
+$emphasis-dark: #12274E;
+
+$contrast: white;
+
+$gradient: linear-gradient(-180deg, $base-light 0%, $base-dark 100%);
+$shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.50);
+$border: solid 1px #979797;
+*/
+.card {
+  /* Post Base: */
+  background: white;
+  border-radius: 7px;
+  height: auto;
+  margin-bottom: 20px; }
+  .card .header {
+    /* Blog Post Title: */
+    padding-left: 2px;
+    font-family: 'Lobster', cursive;
+    font-weight: 100;
+    font-size: 24px;
+    color: #015F56;
+    border-bottom: solid 1px #979797; }
+    .card .header .title {
+      padding-left: 3px;
+      font-weight: 300; }
+    .card .header .date {
+      float: right;
+      font-weight: 100;
+      font-size: 18px;
+      line-height: 24px; }
+  .card .content {
+    background: #F2F2F2;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #003C36;
+    line-height: 22px;
+    border-radius: 0 0 7px 7px; }
+
+/*# sourceMappingURL=Sidecard.css.map */
